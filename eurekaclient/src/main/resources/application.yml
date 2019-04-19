@@ -1,0 +1,15 @@
+eureka:
+  instance:
+    #true 默认ip注册，false则以hostname注册
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${server.port}
+  client:
+    serviceUrl:
+      #指定注册中心的地址
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8762
+spring:
+  application:
+    #服务名
+    name: eurekaclient
