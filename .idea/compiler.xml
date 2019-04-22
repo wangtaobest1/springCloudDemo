@@ -8,6 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="config" />
         <module name="eurekaclient" />
+        <module name="eurekaclientFour" />
+        <module name="eurekaclientThree" />
         <module name="eurekaclienttwo" />
         <module name="eurekaserver" />
         <module name="feign" />

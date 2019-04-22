@@ -2,18 +2,16 @@ package com.strawman.cloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.cloud.client.SpringCloudApplication;
-import org.springframework.cloud.config.server.EnableConfigServer;
 
 /**
- * @ClassName EurekaConfig
+ * @ClassName EurekaCilentApplication
  * @Author tao
- * @Date 2019/4/19 15:17
+ * @Date 2019/4/18 10:16
  * @Version 1.0
  */
 @SpringCloudApplication
-@EnableConfigServer//声明配置中心开启
-public class EurekaConfig {
+public class EurekaCilentTourApplication {
     public static void main(String[] args) {
-        SpringApplication.run(EurekaConfig.class,args);
+        SpringApplication.run(EurekaCilentTourApplication.class,args);
     }
 }

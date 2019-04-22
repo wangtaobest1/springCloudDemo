@@ -1,0 +1,27 @@
+spring:
+  cloud:
+    config:
+      name: eurekaclientFour
+      label: master
+      discovery:
+        enabled: true
+        serviceId: config
+  rabbitmq:
+    host: 47.98.58.255
+    port: 5672
+    username: mqcs
+    password: 123456
+    virtualHost: /
+    publisherConfirms: true
+    listener:
+      simple:
+        concurrency: 10
+        max-concurrency: 10
+        prefetch: 1 # 从队列每次取一个
+        auto-startup: true
+        default-requeue-rejected: true # 失败后重试
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
