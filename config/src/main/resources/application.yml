@@ -11,14 +11,14 @@ spring:
         git:
           uri: https://github.com/wangtaobest1/jMing.git #配置git仓库地址
           searchPaths: 稻草人 #配置仓库路径
-          username: wyxiaoxiaoke@163.com  #访问git仓库的用户名
-          password: wtyy.92sw #访问git仓库的用户密码
+          username: *  #访问git仓库的用户名
+          password: * #访问git仓库的用户密码
       label: master #配置仓库的分支
   rabbitmq:
     host: 47.98.58.255
     port: 5672
-    username: mqcs
-    password: 123456
+    username: *
+    password: *
     virtualHost: /
     publisherConfirms: true
     listener:
