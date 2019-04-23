@@ -20,6 +20,13 @@ spring:
         prefetch: 1 # 从队列每次取一个
         auto-startup: true
         default-requeue-rejected: true # 失败后重试
+  zipkin:
+#    base-url: http://47.98.58.255:9411
+#    sender:
+#      type: web
+    sleuth:
+      sampler:
+        probability: 1.0
 eureka:
   client:
     service-url:
